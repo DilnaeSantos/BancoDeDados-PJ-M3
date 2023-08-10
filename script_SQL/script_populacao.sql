@@ -24,7 +24,7 @@ VALUES
 ('Editora 34', 'https://www.editora34.com.br/'),
 ('Agir', default), -- 'default' novamente para o valor padrão
 ('Editora José Olympio', default);
-
+  
 -- Inserção de autores na tabela 'autor'
 INSERT INTO
 autor (nome, nascimento, nacionalidade, biografia)
@@ -39,17 +39,18 @@ VALUES
 ('Antoine de Saint-Exupéry', '1900-06-29', 'Francês', 'Antoine de Saint-Exupéry foi um escritor...'),
 ('Harper Lee', '1926-04-28', 'Americana', 'Harper Lee foi uma renomada escritora...');
 
+-- os anos que foi utilizado na tabela livros sao ficticios por que foi utilizado o tipo primitivo year e eu tive que adaptar o ano para o intervalo de tempo aceito pelo year
 -- Inserção de livros na tabela 'livros'
 INSERT INTO
 livros (editora_id, autor_id, titulo, ano_pubricacao, idioma, N_paginas, genero_id)
 VALUES
-(2, 1, 'Dom Casmurro', '1899', 'Português', 240, 1),
-(1, 2, '1984', '1949', 'Inglês', 328, 2),
-(3, 3, 'Harry Potter e a Pedra Filosofal', '1997', 'Português', 223, 3),
-(4, 4, 'Cem Anos de Solidão', '1967', 'Espanhol', 432, 4),
-(2, 2, 'A Revolução dos Bichos', '1945', 'Português', 152, 5),
-(5, 5, 'O Senhor dos Anéis - A Sociedade do Anel', '1954', 'Português', 576, 6),
-(6, 6, 'Crime e Castigo', '1866', 'Português', 544, 7),
-(2, 7, 'A Metamorfose', '1915', 'Português', 112, 8),
-(7, 8, 'O Pequeno Príncipe', '1943', 'Português', 96, 9),
-(8, 9, 'O Sol é para Todos', '1960', 'Português', 364, 10);
+(2, 1, 'Dom Casmurro', '2009', 'Português', 240, 1),
+(1, 2, '2002', '1949', 'Inglês', 328, 2),
+(3, 3, 'Harry Potter e a Pedra Filosofal', '2005', 'Português', 223, 3),
+(4, 4, 'Cem Anos de Solidão', '2007', 'Espanhol', 432, 4),
+(2, 2, 'A Revolução dos Bichos', '2005', 'Português', 152, 5),
+(5, 5, 'O Senhor dos Anéis - A Sociedade do Anel', '2004', 'Português', 576, 6),
+(6, 6, 'Crime e Castigo', '2006', 'Português', 544, 7),
+(2, 7, 'A Metamorfose', '2001', 'Português', 112, 8),
+(7, 8, 'O Pequeno Príncipe', '2005', 'Português', 96, 9),
+(8, 9, 'O Sol é para Todos', '2009', 'Português', 364, 3);
